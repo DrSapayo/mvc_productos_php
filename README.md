@@ -16,11 +16,11 @@ Proyecto para prácticas de PHP usando el patrón MVC (Modelo Vista Controlador)
 
 ## Estructura MVC
 
-/mvc_productos_db
-    /app
-        /config
-        /controllers
-        /models
-        /views
-    /database
-    /public
+- /mvc_productos_db
+    - /app
+        - /config
+        - /controllers
+        - /models
+        - /views
+    - /database
+    - /public
