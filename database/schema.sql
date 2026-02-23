@@ -1,7 +1,7 @@
 /* Creamos la base de datos usando los atributos del mismo modelo de producto
 y se usa el uft8m4 para soportar la mayoría de caracteres */
 
-CREATE DATABASE mvc_productos CHARACTER SET uft8mb4;
+CREATE DATABASE mvc_productos CHARACTER SET utf8;
 
 USE mvc_productos;
 

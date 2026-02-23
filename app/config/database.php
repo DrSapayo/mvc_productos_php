@@ -6,7 +6,7 @@ class Database {
     private static $db = 'mvc_productos';
     private static $user = 'root';
     private static $pass = 'admin';
-    private static $charset = 'uft8mb4';
+    private static $charset = 'utf8';
 
     public static function conectar(){
 

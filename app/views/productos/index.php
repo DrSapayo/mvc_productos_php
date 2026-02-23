@@ -1,9 +1,30 @@
-<?php
+<!DOCTYPE html>
+<html lang="es">
+<body>
+    <h2>Productos</h2>
 
-require_once __DIR__ . '/../app/config/database.php';
+    <a href="/php_practica/mvc_productos_db/public/?accion=create">Crear Producto</a>
 
-$db = Database::conectar();
-
-echo "Conexión exitosa";
-
-?>
+    <ul>
+    <?php foreach ($productos as $producto): ?>
+        <li>
+            <?= $producto->getNombre() ?> -
+            $<?= $producto->getPrecio() ?> -
+            Stock: <?= $producto->getStock() ?>
+            <div>
+                <a href="/php_practica/mvc_productos_db/public/?accion=edit&id=<?= $producto->getId() ?>">
+                    Editar  
+                </a>
+            </div>
+            <div>
+                <a href="/php_practica/mvc_productos_db/public/?accion=delete&id=<?= $producto->getId() ?>"
+                    onclick="return confirm('¿Eliminar producto?')">
+                    Eliminar
+                </a>
+            </div>
+        </li>
+    <?php endforeach; ?>
+    </ul>
+    
+</body>
+</html>
